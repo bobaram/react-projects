@@ -1,0 +1,84 @@
+.container {
+  border: 10px solid white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.container:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.image {
+  width: 100%;
+  height: 75%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cartCont {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  right: 25px;
+  top: 90%;
+  width: 22%;
+  height: 26%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: rgb(106, 221, 167);
+  display: none;
+}
+.cart {
+  color: rgb(250, 248, 248);
+}
+.text {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title {
+  margin-left: 5px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.price {
+  margin-left: 5px;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 160%;
+}
+.show {
+  display: flex;
+}
+.overlay::before {
+  position: absolute;
+  display: block;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(119, 118, 118, 0.5);
+  content: "";
+}
+.overlay::after {
+  content: "Out Of Stock !";
+  color: whitesmoke;
+  position: absolute;
+  right: 20%;
+  font-size: 25px;
+  font-weight: 700;
+}

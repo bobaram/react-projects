@@ -1,0 +1,163 @@
+.items {
+  width: 80%;
+  height: 200px;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left .brand {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+}
+.left .type {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+}
+.left .price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+}
+
+.left .sizes {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left .sizes div {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+.left .sizes div span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+}
+
+.left .sizes div:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.middle {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.middle div {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.middle div span {
+  height: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 7px;
+}
+.key {
+  width: 60%;
+}
+.value {
+  width: 30%;
+}
+.middle div span:hover {
+  background-color: green;
+  color: white;
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  height: 80%;
+}
+
+.numbers,
+.image {
+  height: 100%;
+}
+
+.numbers {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.numbers .sign,
+.numbers div {
+  width: 100%;
+  height: 25%;
+  color: black;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.numbers .sign span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+}
+.amount {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+}
+.numbers .sign:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.numbers div {
+  border: none;
+}
+
+.image {
+  width: 60%;
+  position: relative;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.next,
+.prev {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  color: white;
+  opacity: 0.8;
+  border-radius: 0 3px 3px 0;
+}
+.next:hover,
+.prev:hover {
+  background-color: green;
+  opacity: 0.7;
+}
+.next {
+  right: 0;
+}

@@ -1,0 +1,20 @@
+.header {
+  height: 120px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.header h2 {
+  margin-left: 45px;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 160%;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  grid-auto-rows: 280px;
+  justify-content: center;
+  grid-gap: 100px;
+}
